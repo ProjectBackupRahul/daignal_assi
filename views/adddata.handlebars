@@ -1,0 +1,21 @@
+<h1>Add Mobile Data</h1>
+{{#if error}} <span>{{error}}</span>{{/if}}
+<form method="POST" action="/data/add">
+  <div class="form-group">
+    <label>Add Title</label>
+    <input type="text" name="title" class="form-control" placeholder="Add Title" required = true>
+  </div>
+  <div class="form-group">
+    <label>Add Description</label>
+    <input type="text" name="description" class="form-control" placeholder="Add Description" required= true>
+  </div>
+  <div class="form-group">
+    <label>Image1</label>
+    <input type="url" name="imageurl1" class="form-control" placeholder="https://example.com" required = true>
+  </div>
+  <div class="form-group">
+    <label>Image2</label>
+    <input type="url" name="imageurl2" class="form-control" placeholder="https://example.com" required=true>
+  </div>
+  <input type="submit" class="btn btn-primary" value="Save">
+</form>
